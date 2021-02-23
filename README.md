@@ -6,3 +6,5 @@ Redux
 Styled-Components
 Firebase
 Node.JS
+CSS/SASS
+O-Auth
