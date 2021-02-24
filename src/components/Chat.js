@@ -40,7 +40,7 @@ const Container = styled.div`
 `
 
 const Channel = styled.div `
-
+    
 `
 
 const ChannelDetails = styled.div `

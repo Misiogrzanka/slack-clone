@@ -39,6 +39,7 @@ const InputContainer = styled.div `
             flex: 1;
             border: none;
             font-size: 12px;
+            height: 40px;
             :focus {
                 outline: none;
             }
