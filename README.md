@@ -8,3 +8,7 @@ Firebase
 Node.JS
 CSS/SASS
 O-Auth
+
+*Recently Added*
+
+Deployed the app in firebase. It is free to use by anyone.
