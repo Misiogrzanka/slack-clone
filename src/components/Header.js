@@ -1,23 +1,12 @@
-import React, { useState } from 'react';
+import React from 'react';
 import styled from 'styled-components';
 import AccessTimeIcon from '@material-ui/icons/AccessTime';
 import HelpOutlineIcon from '@material-ui/icons/HelpOutline';
 
 function Header({ user, signOut }) {
-	const [isDarkMode, setIsDarkMode] = useState(false);
-
-	const toggleDarkMode = (prevState) => {
-		return setIsDarkMode(~isDarkMode);
-	};
 
 	return (
 		<Container>
-			<input
-				type='radio'
-				value='option1'
-				checked={isDarkMode}
-				onClick={toggleDarkMode}
-			/>
 			<Main>
 				<AccessTimeIcon />
 				<SearchContainer>
@@ -106,19 +95,5 @@ const UserImage = styled.div`
 
 	img {
 		width: 100%;
-	}
-`;
-
-const DarkMode = styled.div`
-	width: 50px;
-	height: 25px;
-	background: white;
-	border-radius: 12px;
-	::after {
-		content: '';
-		width: 38px;
-		height: 25px;
-		background: #336d0f;
-		cursor: pointer;
 	}
 `;

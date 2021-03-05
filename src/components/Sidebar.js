@@ -2,7 +2,6 @@ import React from 'react';
 import styled from 'styled-components';
 import AddCircleOutlineIcon from '@material-ui/icons/AddCircleOutline';
 import { sidebarItems } from '../data/SidebarData';
-import { ChannelsData } from '../data/ChannelsData';
 import AddIcon from '@material-ui/icons/Add';
 import db from '../firebase';
 import { useHistory } from "react-router-dom"
