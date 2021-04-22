@@ -31,7 +31,7 @@ function Chat({ user }) {
 				userimage: user.photo,
 				timestamp: firebase.firestore.Timestamp.now(),
 			};
-			db.collection('rooms').doc(channelId).collection('messages').add(payload) ;
+			db.collection('rooms').doc(channelId).collection('messages').add(payload);
 		}
 	};
 
@@ -74,7 +74,7 @@ function Chat({ user }) {
 						);
 					})}
 			</MessageContainer>
-			<ChatInput sendMessage={sendMessage}/>
+			<ChatInput sendMessage={sendMessage} />
 		</Container>
 	);
 }
@@ -84,7 +84,7 @@ export default Chat;
 const Container = styled.div`
 	display: grid;
 	grid-template-rows: 64px auto min-content;
-    min-height: 0;
+	min-height: 0;
 `;
 
 const Channel = styled.div``;
@@ -120,7 +120,7 @@ const Header = styled.div`
 `;
 
 const MessageContainer = styled.div`
-    display: flex;
-    flex-direction: column;
-    overflow-y: scroll;
+	display: flex;
+	flex-direction: column;
+	overflow-y: scroll;
 `;
